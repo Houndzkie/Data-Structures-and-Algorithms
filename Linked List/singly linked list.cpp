@@ -80,12 +80,12 @@ class LinkedList {
 
     // Destructor to free memory
     ~LinkedList() {
-      Node* curr = head;
+      Node* temp = head;
 
-      while (curr) {
-        Node* nextNode = curr->next;
-        delete curr;
-        curr = nextNode;
+      while (temp) {
+        Node* nextNode = temp->next;
+        delete temp;
+        temp = nextNode;
       }
     }
 };
